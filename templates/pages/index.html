@@ -1,5 +1,252 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Home</h1>
+<!-- Showcase -->
+  <section id="showcase">
+    <div class="container text-center">
+      <div class="home-search p-5">
+        <div class="overlay p-5">
+          <h1 class="display-4 mb-4">
+            Tu znajdziesz czego szukasz
+          </h1>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quas, asperiores eveniet vel nostrum magnam
+            voluptatum tempore! Consectetur, id commodi!</p>
+          <div class="search">
+            <form action="search.html">
+              <!-- Form Row 1 -->
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Keywords</label>
+                  <input type="text" name="keywords" class="form-control" placeholder="Słowa kluczowe (Basen, Garaż, etc)">
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">City</label>
+                  <input type="text" name="city" class="form-control" placeholder="Miasto">
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">State</label>
+                  <select name="state" class="form-control">
+                    <option selected="true" disabled="disabled">Województwa (Wszystkie)</option>
+                    <option value="D">Dolnośląskie</option>
+                    <option value="C">Kujawsko-pomorskie</option>
+                    <option value="L">Lubelskie</option>
+                    <option value="F">Lubuskie</option>
+                    <option value="E">Lódzkie</option>
+                    <option value="K">Małopolskie</option>
+                    <option value="W">Mazowieckie</option>
+                    <option value="O">Opolskie</option>
+                    <option value="R">Podkarpackie</option>
+                    <option value="B">Podlaskie</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Form Row 2 -->
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label class="sr-only">Bedrooms</label>
+                  <select name="bedrooms" class="form-control">
+                    <option selected="true" disabled="disabled">Sypialnie (Wszystkie)</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <select name="price" class="form-control" id="type">
+                    <option selected="true" disabled="disabled">Cena Maksymalna (Jakakolwiek)</option>
+                    <option value="100000">100,000 PLN</option>
+                    <option value="200000">200,000 PLN</option>
+                    <option value="300000">300,000 PLN</option>
+                    <option value="400000">400,000 PLN</option>
+                    <option value="500000">500,000 PLN</option>
+                    <option value="600000">600,000 PLN</option>
+                    <option value="700000">700,000 PLN</option>
+                    <option value="800000">800,000 PLN</option>
+                    <option value="900000">900,000 PLN</option>
+                    <option value="1000000">1M+</option>
+                  </select>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-block mt-4" type="submit">Wyszukaj</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Listings -->
+  <section id="listings" class="py-5">
+    <div class="container">
+      <h3 class="text-center mb-3">Najnowsze oferty</h3>
+      <div class="row">
+        <!-- Listing 1 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/img/homes/home-1.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-secondary text-white">490,000 PLN</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">45 Starowiejska</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Gdynia, 80-444</p>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Metrów: 500</div>
+                <div class="col-6">
+                  <i class="fas fa-car"></i> Garaży: 2</div>
+              </div>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-bed"></i> Sypialnie: 3</div>
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Łazienki: 2</div>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-user"></i> Tomasz Kowalski</div>
+              </div>
+              <div class="row text-secondary pb-2">
+                <div class="col-6">
+                  <i class="fas fa-clock"></i> 5 dni temu</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">Wiecej informacji</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Listing 2 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/img/homes/home-2.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-secondary text-white">550,000 PLN</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">18 Leczkowa</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Gdansk, 80-432</p>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Metrów: 340</div>
+                <div class="col-6">
+                  <i class="fas fa-car"></i> Garaży: 1</div>
+              </div>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-bed"></i> Sypialnie: 4</div>
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Łazienki: 2.5</div>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-user"></i> Leo Meo</div>
+              </div>
+              <div class="row text-secondary pb-2">
+                <div class="col-6">
+                  <i class="fas fa-clock"></i> 5 dni temu</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">Więcej informacji</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Listing 3 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/img/homes/home-3.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-secondary text-white">580,000 PLN</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">187 Kolarska</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Warszawa, 050-455</p>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Metrów: 736</div>
+                <div class="col-6">
+                  <i class="fas fa-car"></i> Garaże: 0</div>
+              </div>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-bed"></i> Sypialnie: 4</div>
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Łazienki: 3</div>
+              </div>
+              <hr>
+              <div class="row py-2 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-user"></i> Danuta Nowak</div>
+              </div>
+              <div class="row text-secondary pb-2">
+                <div class="col-6">
+                  <i class="fas fa-clock"></i> 5 dni temu</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">Więcej informacji</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-5 bg-secondary text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="fas fa-comment fa-4x mr-4"></i>
+          <hr>
+          <h3>Konsultacje</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-home fa-4x mr-4"></i>
+          <hr>
+          <h3>Zarządzanie Nieruchomościami</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-suitcase fa-4x mr-4"></i>
+          <hr>
+          <h3>Wynajem i sprzedaż</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
+            hic dignissimos ratione ea quae.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}
