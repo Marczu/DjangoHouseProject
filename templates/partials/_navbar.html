@@ -12,25 +12,31 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav">
                 <li
-                    {% if '/' == request.path %}
-                        class="nav-item active mr-3"
-                    {% else %}
-                        class="nav-item mr-3"
-                    {% endif %}
+                        {% if '/' == request.path %}
+                            class="nav-item active mr-3"
+                        {% else %}
+                            class="nav-item mr-3"
+                        {% endif %}
                 >
                     <a class="nav-link" href="{% url 'index' %}">Start</a>
                 </li>
-                 <li
-                    {% if 'about' in request.path %}
-                        class="nav-item active mr-3"
-                    {% else %}
-                        class="nav-item mr-3"
-                    {% endif %}
+                <li
+                        {% if 'about' in request.path %}
+                            class="nav-item active mr-3"
+                        {% else %}
+                            class="nav-item mr-3"
+                        {% endif %}
                 >
                     <a class="nav-link" href="{% url 'about' %}">O nas</a>
                 </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="listing.html">Polecane oferty</a>
+                <li
+                        {% if 'listings' in request.path %}
+                            class="nav-item active mr-3"
+                        {% else %}
+                            class="nav-item mr-3"
+                        {% endif %}
+                >
+                    <a class="nav-link" href="{% url 'listings' %}">Polecane oferty</a>
                 </li>
             </ul>
 
