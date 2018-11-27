@@ -1,0 +1,14 @@
+#header {
+    height: 50px;
+    background: #10284e;
+    color: #FFF;
+}
+
+#branding h1 {
+    color: #FFF;
+    margin-right: 15px;
+}
+
+#branding img {
+    margin-right: 20px;
+}
