@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
 
 ]
 
@@ -79,7 +80,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'housedb',
-        'USER': 'marcin',
+        'USER': 'postgres',
         'PASSWORD': 'super',
         'HOST': 'localhost'
     }
