@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'housedb',
-        'USER': 'postgres',
+        'USER': 'marcin',
         'PASSWORD': 'super',
         'HOST': 'localhost'
     }

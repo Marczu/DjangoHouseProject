@@ -8,4 +8,5 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/housedb</jdbc-url>
     </data-source>
   </component>
+>>>>>>> origin/master
 </project>
