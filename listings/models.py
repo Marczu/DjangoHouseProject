@@ -2,6 +2,7 @@ from django.db import models
 from datetime import datetime
 from realtors.models import Realtor
 
+
 class Listing(models.Model):
     realtor = models.ForeignKey(Realtor, on_delete=models.DO_NOTHING, verbose_name='Pośrednik')
     title = models.CharField(max_length=200, verbose_name='Tytuł')
@@ -25,5 +26,6 @@ class Listing(models.Model):
     photo_6 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True, verbose_name='Dodatkowe wnetrza 6')
     is_published = models.BooleanField(default=True, verbose_name='Opublikowany')
     list_date = models.DateTimeField(default=datetime.now, blank=True, verbose_name='Data')
+
     def __str__(self):
         return self.title
