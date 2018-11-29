@@ -25,21 +25,20 @@ price_choices = {
 }
 
 province_choices = {
-    'AK': 'Alaska',
-    "D": "Dolnośląskie",
-    "C": "Kujawsko - pomorskie",
-    "L": "Lubelskie",
-    "F": "Lubuskie",
-    "E": "Lódzkie",
-    "K": "Małopolskie",
-    "W": "Mazowieckie",
-    "O": "Opolskie",
-    "R": "Podkarpackie",
-    "B": "Podlaskie",
-    "G": "Pomorskie",
-    "S": "Śląskie",
-    "T": "Świętokrzyskie",
-    "N": "Warmińsko - mazurskie",
-    "P": "Wielkopolskie",
-    "Z": "Zachodniopomorskie"
+    "Dolnośląskie": "Dolnośląskie",
+    "Kujawsko - pomorskie": "Kujawsko - pomorskie",
+    "Lubelskie": "Lubelskie",
+    "Lubuskie": "Lubuskie",
+    "Lódzkie": "Lódzkie",
+    "Małopolskie": "Małopolskie",
+    "Mazowieckie": "Mazowieckie",
+    "Opolskie": "Opolskie",
+    "Podkarpackie": "Podkarpackie",
+    "Podlaskie": "Podlaskie",
+    "Pomorskie": "Pomorskie",
+    "Śląskie": "Śląskie",
+    "Świętokrzyskie": "Świętokrzyskie",
+    "Warmińsko - mazurskie": "Warmińsko - mazurskie",
+    "Wielkopolskie": "Wielkopolskie",
+    "Zachodniopomorskie": "Zachodniopomorskie"
 }
